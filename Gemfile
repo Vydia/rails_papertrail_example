@@ -19,7 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'paper_trail'
+gem 'paper_trail', '~> 5.0'
+gem 'paper_trail_manager', :git => 'git://github.com/kwstannard/paper_trail_manager.git', :ref => '00a14d6a7e73ec063e32d2e72543fbc9474bd659'
+gem 'kaminari'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
