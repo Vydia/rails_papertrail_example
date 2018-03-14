@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site sets up a basic rails app with scaffolding for an Animal model.
 
-Things you may want to cover:
+It uses paper_trail gem to manage changes to the model.  It also uses paper_trail_manager to show changes.
 
-* Ruby version
+```
+bin/rails db:migrate
+bin/rails server
+```
 
-* System dependencies
+Go to `localhost:3000/animals`.  Add an animal.  Add another.  Change some stuff.
 
-* Configuration
+Go to `locahost:3000/changes`.  See the changes.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+So paper_trail_manager isn't very good.  The view doesn't include the changed fields so it's missing THE critical piece of data.  It also doesn't run on Rails 5 by default and I had to install from a fork.
