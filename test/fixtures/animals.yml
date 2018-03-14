@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  born_at: 2018-03-14 16:52:24
+  type: 
+  price: 1
+
+two:
+  name: MyString
+  born_at: 2018-03-14 16:52:24
+  type: 
+  price: 1
